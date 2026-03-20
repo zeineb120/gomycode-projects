@@ -1,91 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my beautiful page</title>
+    <title>Mon Portfolio Créatif</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-    <nav>  
-        <ul>
-  <li><a href="default.asp">Home</a></li>
-  <li><a href="about.asp">about</a></li>
-  <li><a href="work.asp">work</a></li>
-  <li><a href="resume.asp">resume</a></li>
-  <li><a href="contact.asp">contact</a></li>
-</ul>
-    </nav>
-        <h1> personal informations</h1>
-        <p>  here is  my information to get to know me better!</p>
-       
-        <dl>     
-            <dt>home</dt>
-                <dd> jardins del menzah 2</dd>
-                <img src="jardins del.jpg" alt="localisation" 
-                width="210" height="180"> 
-            <dt>about</dt>
-                <dd>i am a highschooler that study in tunisian french school</dd>
-                <table border="1">
-                    <tr>
-                        <th>name </th>
-                        <th>surname</th>
-                        <th>age </th>
-                    </tr>
-                    <tr>
-                        <td> Ghanmi</td>
-                        <td>zeineb</td>
-                        <td>15</td>
-                    </tr>
-                </table>
-                <dt>work</dt>
-                <dd> i study in louis pasteur french high school</dd>
-                <img src="louis.jpg" alt="highschool" width="210" height="180">
-                <dt>resume</dt>
-                <dd>i won in math mental olympiad when i was ten, then i participated in gymnastics olympiation ,also i entered a journalist club and finally i joined british council with a level b1.2 and continuing progressing hoping for c2 level in english  </dd>
-               <a href="https://youtu.be/pl2o2qEK1i0?si=StXv2N0ARStmRell" >click here to see</a>
-               <a href="https://youtu.be/_ZP0nJ-mgRg?si=4esNXWSCMmnFEa6F">  click for the next one</a>
-               <dt>contact</dt>
-                <dd>my email:zeinebghanmi96@gmail.com</dd>
-        </dl>
+    <header class="main-header">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="default.asp">Accueil</a></li>
+                <li><a href="about.asp">À propos</a></li>
+                <li><a href="work.asp">Travail</a></li>
+                <li><a href="resume.asp">CV</a></li>
+                <li><a href="contact.asp">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1 class="title-gradient">Zeineb Ghanmi</h1>
+            <p class="subtitle">Bienvenue sur mon portfolio personnel !</p>
+        </div>
     </header>
-<main>
-   <a name="top of the page"></a>
-        <p1> let's go up to top</p1>
-            <p2> now im gonna show you a video about my favourite book so you can enjoye it too if you want </p2>
-            <a href="https://youtu.be/pRgSIsW2_D0?si=5ffJxwyghXi900YY">click to watch</a>
-            <a href="#TopOfThePage"> Let's go up Top </a>
-        </main>
 
+    <main class="container">
+        <section class="info-section">
+            <dl class="info-list">
+                <div class="info-card">
+                    <dt>📍 Localisation</dt>
+                    <dd>Jardins d'El Menzah 2</dd>
+                    <img src="jardins del.jpg" alt="localisation" class="rounded-img">
+                </div>
 
+                <div class="info-card">
+                    <dt>👤 À propos</dt>
+                    <dd>Lycéenne au sein de l'enseignement français en Tunisie.</dd>
+                    <table class="styled-table">
+                        <tr>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Âge</th>
+                        </tr>
+                        <tr>
+                            <td>Ghanmi</td>
+                            <td>Zeineb</td>
+                            <td>15</td>
+                        </tr>
+                    </table>
+                </div>
 
+                <div class="info-card">
+                    <dt>🎓 Éducation</dt>
+                    <dd>Lycée Français Louis Pasteur</dd>
+                    <img src="louis.jpg" alt="highschool" class="rounded-img">
+                </div>
 
+                <div class="info-card">
+                    <dt>🏆 Palmarès</dt>
+                    <dd>Olympiades de calcul mental, gymnastique, journalisme et niveau B1.2 au British Council.</dd>
+                    <div class="links-group">
+                        <a href="https://youtu.be/pl2o2qEK1i0" class="btn">Voir Vidéo 1</a>
+                        <a href="https://youtu.be/_ZP0nJ-mgRg" class="btn">Voir Vidéo 2</a>
+                    </div>
+                </div>
+            </dl>
+        </section>
 
-        <footer>
-      <form>
-      <label>Name:</label>
-      <input type="text" name="first name" placeholder="Type your name here" />
-      
+        <section class="extra-content">
+            <h3>Ma recommandation lecture</h3>
+            <p>Voici une vidéo sur mon livre préféré, j'espère qu'il vous plaira !</p>
+            <a href="https://youtu.be/pRgSIsW2_D0" class="btn-video">Regarder la vidéo</a>
+        </section>
+    </main>
 
-
-      <label>Number:</label>
-      <input type="number" name="number" value="" />
-      
-
-
-      <label>Birth Date:</label>
-      <input type="date" name="birthday" />
-      
-
-
-      <label>Password:</label>
-      <input type="password" name="password" />
-      
-
-
-      <input type="submit" value="Submit" />
-    </form>
-</footer>
+    <footer class="footer">
+        <form class="contact-form">
+            <div class="input-group">
+                <label>Nom :</label>
+                <input type="text" name="first name" placeholder="Votre nom">
+            </div>
+            <div class="input-group">
+                <label>Téléphone :</label>
+                <input type="number" name="number">
+            </div>
+            <button type="submit">Envoyer</button>
+        </form>
+        <a href="#top" class="back-to-top">Retour en haut ↑</a>
+    </footer>
 </body>
 </html>
