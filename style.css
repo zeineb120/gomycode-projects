@@ -1,1 +1,151 @@
 
+:root {
+    --primary: #4a90e2;
+    --secondary: #67b26f;
+    --dark: #2c3e50;
+    --light: #f4f7f6;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Changement de la police en Roboto */
+    background-color: var(--light);
+    color: var(--dark);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- BARRE DE NAVIGATION INLINE --- */
+.navbar {
+    background-color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;        /* Met les éléments en ligne */
+    justify-content: center;
+    gap: 30px;            /* Espace entre les liens */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+/* --- HEADER --- */
+.main-header {
+    text-align: center;
+}
+
+.hero-content {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #4ca1af, #c4e0e5);
+}
+
+.title-gradient {
+    font-size: 3rem;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* --- CARTES ET IMAGES --- */
+.info-card {
+    background: white;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.info-card dt {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.rounded-img {
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 3px solid var(--light);
+    object-fit: cover;
+}
+
+/* --- TABLEAU STYLE --- */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.styled-table th {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px;
+}
+
+.styled-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* --- BOUTONS --- */
+.btn, .btn-video {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    margin: 5px;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background-color: #357abd;
+}
+
+/* --- FOOTER & FORM --- */
+.footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
